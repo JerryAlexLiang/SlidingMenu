@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--我们SlidingMenu作为普通View在布局文件中设置了布局，
+        并且设置了viewAbove的值为另一个布局-->
+        <com.jeremyfeinstein.slidingmenu.lib.SlidingMenu xmlns:sliding="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/slidingmenulayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            sliding:behindOffset="0dp"
+            sliding:behindScrollScale="1"
+            sliding:fadeDegree="0.3"
+            sliding:fadeEnabled="true"
+            sliding:touchModeAbove="fullscreen"
+            sliding:viewAbove="@layout/pic" />
+    </LinearLayout>
+
+
+</RelativeLayout>
